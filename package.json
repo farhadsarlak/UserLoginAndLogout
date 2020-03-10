@@ -1,0 +1,27 @@
+{
+    "name": "form-creator-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon index.js"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "bcrypt": "^3.0.2",
+        "config": "^3.0.0",
+        "express": "^4.16.4",
+        "helmet": "^3.15.0",
+        "joi": "^14.3.0",
+        "jsonwebtoken": "^8.4.0",
+        "lodash": "^4.17.11",
+        "mongoose": "^5.3.14",
+        "morgan": "^1.9.1",
+        "npm": "^6.4.1",
+        "persian-date": "^1.0.5"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
