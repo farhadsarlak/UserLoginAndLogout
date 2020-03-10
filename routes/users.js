@@ -5,6 +5,15 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const { User, validate } = require('../model/user');
 
+router.get('/', async (req, res) => {
+    const users = await User.find();
+
+    if (!users) return res.status(400).send('کاربری وجود ندارد');
+
+    res.status(200).send(users);
+});
+
+
 router.post('/', auth, async (req, res) => {
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
